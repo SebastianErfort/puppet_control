@@ -1,8 +1,8 @@
 class profile::r10k {
   class { 'r10k':
-    remote => 'https://github.com/Sebastian/Erfort/puppet_control',
+    remote => 'https://https://github.com/SebastianErfort/puppet_control',
   }
-  class {'r10k::webook::config':
+  class {'r10k::webhook::config':
     use_mcollective => false,
     enable_ssl      => false,
   }
