@@ -2,12 +2,12 @@ class profile::r10k {
   class { 'r10k':
     remote => 'https://github.com/SebastianErfort/puppet_control',
   }
-  class {'r10k::webhook::config':
-    use_mcollective => false,
-    enable_ssl      => false,
-  }
-  class { 'r10k::webhook':
-    user  => 'root',
-    group => 'root',
-  }
+#  class {'r10k::webhook::config':
+#    use_mcollective => false,
+#    enable_ssl      => false,
+#  }
+#  class { 'r10k::webhook':
+#    user  => 'root',
+#    group => 'root',
+#  }
 }
