@@ -1,6 +1,6 @@
 class profile::r10k {
   class { 'r10k':
-    remote => 'https://https://github.com/SebastianErfort/puppet_control',
+    remote => 'https://github.com/SebastianErfort/puppet_control',
   }
   class {'r10k::webhook::config':
     use_mcollective => false,
